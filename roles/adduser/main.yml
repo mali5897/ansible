@@ -1,0 +1,12 @@
+---
+  - hosts: project
+    become: yes
+    tasks:
+      - name: adding billy user.
+        user:
+          name: billy
+          uid: 1077
+          group: admin
+          createhome: yes
+          home: /home/billy 
+           
